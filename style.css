@@ -1,0 +1,147 @@
+/* rating on-click bg-color
+color: hsl(217, 12%, 63%); */
+
+
+/* main */
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+}
+
+.card {
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border: 0;
+    border-radius: 20px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 30px;
+}
+
+.card-text {
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    margin: 1rem 0 1.5rem !important;
+}
+
+/* rate-state */
+.icon-star {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 17px;
+    height: 50px;
+    width: 50px;
+}
+
+.rating-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.rating-btn>button {
+    background-color: hsl(213, 19%, 18%);
+    border: 0;
+    border-radius: 50%;
+    color: hsl(216, 12%, 54%);
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.btn {
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    border-radius: 20px;
+    display: block;
+    height: 45px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* active */
+.rating-btn>button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%) !important;
+    color: #fff !important;
+}
+
+/* thanks-state */
+.thanks-state img {
+    margin: 1rem 0 2.5rem;
+}
+
+.rating-score {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    height: 30px;
+    line-height: 32px;
+    margin: 0 auto 2rem;
+    width: 65%;
+}
+
+/* footer */
+.attribution {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
+
+/* responsive */
+@media (max-width: 575px) {
+    main {
+        display: block;
+        height: 100%;
+        margin: 10rem 2.5rem 0;
+    }
+    section .card {
+        width: 100%!important;
+        margin: 0 auto;
+    }
+    .card-title {
+        font-size: 28px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .rating-btn>button {
+        height: 40px;
+        width: 40px;
+    }
+    .rating-score {
+        font-size: 12px;
+    }    
+    footer {
+        display: block;
+        margin: 0 auto;
+    }
+}

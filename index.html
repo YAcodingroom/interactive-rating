@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- bs css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <main>
+    <section><!-- Rating state start -->
+      <div class="card rate-state mb-5 d-block" style="width: 26rem;">
+        <div class="card-body">
+          <img class="icon-star" src="./images/icon-star.svg" alt="">
+          <h1 class="card-title">How did we do?</h1>
+          <p class="card-text">Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+          <div class="rating-btn">
+            <button class="score" value="1">1</button>
+            <button class="score" value="2">2</button>
+            <button class="score" value="3">3</button>
+            <button class="score" value="4">4</button>
+            <button class="score" value="5">5</button>
+          </div>
+          <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </section><!-- Rating state end -->
+
+    <section><!-- Thank you state start -->
+      <div class="card text-center thanks-state d-none" style="width: 26rem;">
+        <div class="card-body">
+          <img src="./images/illustration-thank-you.svg" alt="thank you for rating.">
+          <p class="rating-score">You selected <span id="score"></span> out of 5</p>
+          <h1 class="card-title">Thank you!</h1>
+          <p class="card-text">We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+        </div>
+      </div>
+    </section><!-- Thank you state end -->
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">YAL</a>.
+    </div>
+  </footer>
+
+  <!-- bs js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./index.js" charset="utf-8"></script>
+</body>
+
+</html>
