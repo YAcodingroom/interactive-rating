@@ -26,7 +26,7 @@ Users should be able to:
 ![active](screenshot/screenshot_active.png)
 
 ### Links
-- Live Site URL: 
+- Live Site URL: https://yacodingroom.github.io/interactive-rating/
 
 ## My process
 ### Built with
